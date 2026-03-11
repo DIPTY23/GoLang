@@ -3,21 +3,19 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/DIPTY23/dog" //indirect
 	"github.com/DIPTY23/puppy"
 )
 
 func main() {
+
+	fmt.Println("hello Go")
 	s1 := puppy.Bark()
 	s2 := puppy.Barks()
-	fmt.Println(s1)
-	fmt.Println(s2)
-	puppy.From13()
 	s3 := puppy.BigBark()
 	s4 := puppy.BigBarks()
+	fmt.Println(s1)
+	fmt.Println(s2)
 	fmt.Println(s3)
 	fmt.Println(s4)
-
-	fmt.Println(puppy.Bark())
-	fmt.Println(puppy.Barks())
+	puppy.From13()
 }
